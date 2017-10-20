@@ -1,0 +1,8 @@
+.Habit{
+  background: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65vw;
+  padding: 1em;
+}

@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className='App'>
-          <MainArea addHabit={this.addHabit}/>
+          <MainArea addHabit={this.addHabit} habits={this.state.habits}/>
           <BottomNavigationBar/>
         </div>
       </MuiThemeProvider>

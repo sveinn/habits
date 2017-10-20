@@ -56,6 +56,6 @@ class NewHabitForm extends React.Component {
 
 NewHabitForm.propTypes = {
   addHabit: PropTypes.func.isRequired
-}
+};
 
 export default NewHabitForm;
