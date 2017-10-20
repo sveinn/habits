@@ -6,11 +6,28 @@ import MainArea from './MainArea';
 import '../css/App.css';
 
 class App extends Component {
+  constructor(){
+    super();
+
+    this.addHabit = this.addHabit.bind(this);
+
+    this.state = {
+      habits: {}
+    };
+  }
+
+  addHabit(habit){
+    let habits = {...this.state.habits};
+    const timestamp = Date.now();
+    habits[`habit-${timestamp}`] = habit;
+    this.setState({ habits });
+  }
+
   render() {
     return (
       <MuiThemeProvider>
         <div className='App'>
-          <MainArea/>
+          <MainArea addHabit={this.addHabit}/>
           <BottomNavigationBar/>
         </div>
       </MuiThemeProvider>

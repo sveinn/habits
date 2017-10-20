@@ -1,0 +1,18 @@
+.NewHabitForm {
+
+}
+
+
+.NewHabitForm-field {
+  display: block;
+  margin: 4em;
+  padding: 1em;
+  width: 65vw;
+}
+
+.NewHabitForm-field__description {
+}
+
+
+.NewHabitForm-field__button {
+}
