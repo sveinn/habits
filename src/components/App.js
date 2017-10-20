@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Header from './Header.js';
+import BottomNavigationBar from './BottomNavigationBar';
+import Header from './Header';
+import MainArea from './MainArea';
 import '../css/App.css';
-
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <p className="App-intro">
-
-        </p>
-      </div>
+      <MuiThemeProvider>
+        <div className='App'>
+          <MainArea/>
+          <BottomNavigationBar/>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
